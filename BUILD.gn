@@ -247,6 +247,7 @@ if (!is_android) {
 
     if (is_fuchsia) {
       category = "partner"
+      sdk_name = "vulkan"
 
       # The Vulkan loader's interface is defined by standard Khronos vulkan headers
       # which can be obtained separately from the loader implementation itself.
@@ -290,7 +291,7 @@ if (is_fuchsia) {
 
   sdk_documentation("vulkan_license") {
     name = "vulkan_license"
-    category = "public"
+    category = "partner"
 
     files = [
       {
